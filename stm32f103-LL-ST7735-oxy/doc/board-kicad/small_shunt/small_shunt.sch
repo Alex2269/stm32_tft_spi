@@ -1,0 +1,414 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R5
+U 1 1 5E1FDD95
+P 4800 4200
+F 0 "R5" V 4593 4200 50  0000 C CNN
+F 1 "R" V 4684 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4730 4200 50  0001 C CNN
+F 3 "~" H 4800 4200 50  0001 C CNN
+	1    4800 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E2010E6
+P 6600 4200
+F 0 "C1" H 6692 4246 50  0000 L CNN
+F 1 "C_Small" H 6692 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 6600 4200 50  0001 C CNN
+F 3 "~" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP602 U2
+U 1 1 5E218E12
+P 4800 3900
+F 0 "U2" H 4800 4267 50  0000 C CNN
+F 1 "MCP602" H 4800 4176 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 4800 3900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 4800 3900 50  0001 C CNN
+	1    4800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3900 5150 3900
+Wire Wire Line
+	4950 4200 5150 4200
+Wire Wire Line
+	5150 4200 5150 4000
+Wire Wire Line
+	4500 4000 4500 4200
+Wire Wire Line
+	4500 4200 4650 4200
+Wire Wire Line
+	6600 4100 6600 3800
+$Comp
+L Device:R R6
+U 1 1 5E207B77
+P 5400 4000
+F 0 "R6" V 5193 4000 50  0000 C CNN
+F 1 "R" V 5284 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5330 4000 50  0001 C CNN
+F 3 "~" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 4000 5600 4000
+Wire Wire Line
+	5250 4000 5150 4000
+Connection ~ 5150 4000
+Wire Wire Line
+	5150 4000 5150 3900
+Wire Wire Line
+	6450 3800 6350 3800
+Wire Wire Line
+	6600 3800 6450 3800
+Connection ~ 6450 3800
+$Comp
+L Amplifier_Operational:MCP602 U2
+U 3 1 5E218F1D
+P 6550 4100
+F 0 "U2" H 6508 4146 50  0000 L CNN
+F 1 "MCP602" H 6508 4055 50  0000 L CNN
+F 2 "" H 6550 4100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 6550 4100 50  0001 C CNN
+	3    6550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4400 6450 4450
+Connection ~ 6450 4450
+Wire Wire Line
+	6450 4450 6050 4450
+Wire Wire Line
+	6600 4300 6600 4450
+Connection ~ 6600 4450
+Wire Wire Line
+	6600 4450 6450 4450
+$Comp
+L Device:R R1
+U 1 1 5E21FC8B
+P 3900 3700
+F 0 "R1" V 3693 3700 50  0000 C CNN
+F 1 "R" V 3784 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3830 3700 50  0001 C CNN
+F 3 "~" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E221D56
+P 3900 4100
+F 0 "R2" V 3693 4100 50  0000 C CNN
+F 1 "R" V 3784 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3830 4100 50  0001 C CNN
+F 3 "~" H 3900 4100 50  0001 C CNN
+	1    3900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E222B58
+P 4200 3800
+F 0 "R3" V 3993 3800 50  0000 C CNN
+F 1 "R" V 4084 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4130 3800 50  0001 C CNN
+F 3 "~" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3800 4350 3800
+Wire Wire Line
+	3900 3850 3900 3950
+Wire Wire Line
+	4050 4000 4050 4300
+Wire Wire Line
+	4050 4300 3900 4300
+Wire Wire Line
+	3900 4300 3900 4250
+Wire Wire Line
+	4050 3800 4050 3500
+Wire Wire Line
+	4050 3500 4000 3500
+Wire Wire Line
+	3900 3500 3900 3550
+Wire Wire Line
+	3800 4400 3900 4400
+Wire Wire Line
+	3900 4400 3900 4300
+Connection ~ 3900 4300
+$Comp
+L Device:R R4
+U 1 1 5E226A2A
+P 4200 4000
+F 0 "R4" V 3993 4000 50  0000 C CNN
+F 1 "R" V 4084 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4130 4000 50  0001 C CNN
+F 3 "~" H 4200 4000 50  0001 C CNN
+	1    4200 4000
+	0    1    1    0   
+$EndComp
+Connection ~ 4500 4000
+Wire Wire Line
+	4350 4000 4500 4000
+Connection ~ 4000 3500
+Wire Wire Line
+	4000 3500 3900 3500
+Wire Wire Line
+	6050 4100 6050 4450
+$Comp
+L Device:C_Small C2
+U 1 1 5E211B2F
+P 5750 4150
+F 0 "C2" H 5842 4196 50  0000 L CNN
+F 1 "C_Small" H 5842 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 5750 4150 50  0001 C CNN
+F 3 "~" H 5750 4150 50  0001 C CNN
+	1    5750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4250 5750 4450
+Wire Wire Line
+	5750 4450 6050 4450
+Connection ~ 6050 4450
+$Comp
+L Device:R R7
+U 1 1 5E221294
+P 5600 4250
+F 0 "R7" V 5393 4250 50  0000 C CNN
+F 1 "R" V 5484 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5530 4250 50  0001 C CNN
+F 3 "~" H 5600 4250 50  0001 C CNN
+	1    5600 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 4000 5600 4100
+Connection ~ 5600 4000
+Wire Wire Line
+	5600 4000 5550 4000
+Wire Wire Line
+	5600 4400 5600 4450
+Wire Wire Line
+	5600 4450 5750 4450
+Connection ~ 5750 4450
+$Comp
+L Regulator_Linear:L78L33_SOT89 U1
+U 1 1 5E2226AE
+P 6050 3800
+F 0 "U1" H 6050 4042 50  0000 C CNN
+F 1 "L78L33_SOT89" H 6050 3951 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 6050 4000 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 6050 3750 50  0001 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 3800
+Wire Wire Line
+	5750 3800 5750 4050
+$Comp
+L Amplifier_Operational:MCP602 U2
+U 2 1 5E43EF46
+P 4800 5100
+F 0 "U2" H 4800 5467 50  0000 C CNN
+F 1 "MCP602" H 4800 5376 50  0000 C CNN
+F 2 "" H 4800 5100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 4800 5100 50  0001 C CNN
+	2    4800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5100 5300 5100
+$Comp
+L Device:R R1_b1
+U 1 1 5E44C70E
+P 4250 5000
+F 0 "R1_b1" V 4043 5000 50  0000 C CNN
+F 1 "R" V 4134 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4180 5000 50  0001 C CNN
+F 3 "~" H 4250 5000 50  0001 C CNN
+	1    4250 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2_b1
+U 1 1 5E44D38A
+P 4250 5200
+F 0 "R2_b1" V 4043 5200 50  0000 C CNN
+F 1 "R" V 4134 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4180 5200 50  0001 C CNN
+F 3 "~" H 4250 5200 50  0001 C CNN
+	1    4250 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6_b1
+U 1 1 5E44D898
+P 5550 5100
+F 0 "R6_b1" V 5343 5100 50  0000 C CNN
+F 1 "R" V 5434 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5480 5100 50  0001 C CNN
+F 3 "~" H 5550 5100 50  0001 C CNN
+	1    5550 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 5000 4500 5000
+Wire Wire Line
+	4500 5200 4450 5200
+$Comp
+L Device:R R5_b1
+U 1 1 5E45B4C8
+P 4800 5450
+F 0 "R5_b1" V 5007 5450 50  0000 C CNN
+F 1 "R" V 4916 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4730 5450 50  0001 C CNN
+F 3 "~" H 4800 5450 50  0001 C CNN
+	1    4800 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 5100 5300 5450
+Wire Wire Line
+	5300 5450 4950 5450
+Wire Wire Line
+	4450 5200 4450 5450
+Wire Wire Line
+	4450 5450 4650 5450
+Connection ~ 4450 5200
+Wire Wire Line
+	4450 5200 4400 5200
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5E4BF8BD
+P 7950 3150
+F 0 "J1" H 8030 3142 50  0000 L CNN
+F 1 "Conn_01x08" H 8030 3051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7950 3150 50  0001 C CNN
+F 3 "~" H 7950 3150 50  0001 C CNN
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3050 4000 3050
+Wire Wire Line
+	4000 3050 4000 3500
+Wire Wire Line
+	5750 3450 5750 3800
+Wire Wire Line
+	7750 3550 7700 3550
+Wire Wire Line
+	7200 3550 7200 4450
+Wire Wire Line
+	6600 4450 7200 4450
+Wire Wire Line
+	5750 3450 7750 3450
+Wire Wire Line
+	7750 3350 7550 3350
+Wire Wire Line
+	7550 3350 7550 4750
+Wire Wire Line
+	7550 4750 4050 4750
+Wire Wire Line
+	4050 4750 4050 5000
+Wire Wire Line
+	4050 5000 4100 5000
+Wire Wire Line
+	7750 3250 7450 3250
+Wire Wire Line
+	7450 3250 7450 4650
+Wire Wire Line
+	7450 4650 3950 4650
+Wire Wire Line
+	3950 4650 3950 5200
+Wire Wire Line
+	3950 5200 4100 5200
+Wire Wire Line
+	5400 5100 5300 5100
+Connection ~ 5300 5100
+Wire Wire Line
+	5700 5100 5850 5100
+Wire Wire Line
+	5850 5100 5850 5550
+Wire Wire Line
+	5850 5550 3800 5550
+Wire Wire Line
+	3800 5550 3800 4550
+Wire Wire Line
+	3800 4550 7350 4550
+Wire Wire Line
+	7350 4550 7350 3150
+Wire Wire Line
+	7350 3150 7750 3150
+Wire Wire Line
+	3800 2850 3800 4400
+Wire Wire Line
+	3800 2850 7750 2850
+Wire Wire Line
+	7750 2950 5650 2950
+Wire Wire Line
+	5650 2950 5650 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 5E47BA2D
+P 7700 3550
+F 0 "#PWR0101" H 7700 3300 50  0001 C CNN
+F 1 "GND" H 7705 3377 50  0000 C CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 3550
+Wire Wire Line
+	7700 3550 7200 3550
+$Comp
+L power:GND #PWR0102
+U 1 1 5E480645
+P 6100 5550
+F 0 "#PWR0102" H 6100 5300 50  0001 C CNN
+F 1 "GND" H 6105 5377 50  0000 C CNN
+F 2 "" H 6100 5550 50  0001 C CNN
+F 3 "" H 6100 5550 50  0001 C CNN
+	1    6100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6_b2
+U 1 1 5E480F9C
+P 6100 5300
+F 0 "R6_b2" V 5893 5300 50  0000 C CNN
+F 1 "R" V 5984 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6030 5300 50  0001 C CNN
+F 3 "~" H 6100 5300 50  0001 C CNN
+	1    6100 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 5150 6100 5100
+Wire Wire Line
+	6100 5100 5850 5100
+Connection ~ 5850 5100
+Wire Wire Line
+	6100 5450 6100 5550
+$EndSCHEMATC

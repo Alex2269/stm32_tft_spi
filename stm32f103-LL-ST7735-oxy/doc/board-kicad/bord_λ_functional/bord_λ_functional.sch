@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R17
+U 1 1 5E221D56
+P 4900 3550
+F 0 "R17" V 4900 3550 50  0000 C CNN
+F 1 "R" V 4784 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4830 3550 50  0001 C CNN
+F 3 "~" H 4900 3550 50  0001 C CNN
+	1    4900 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L YAAJ_STM32:BluePill_1 BP1
+U 1 1 5E2B5FE8
+P 7750 2200
+F 0 "BP1" H 8325 2375 50  0000 C CNN
+F 1 "BluePill_1" H 8325 2284 50  0000 C CNN
+F 2 "Module:YAAJ_BluePill" H 9000 250 50  0001 C CNN
+F 3 "" H 9000 250 50  0001 C CNN
+	1    7750 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP602 U1
+U 1 1 5E1D000B
+P 5350 2600
+F 0 "U1" H 5350 2600 25  0000 C CNN
+F 1 "MCP602" H 5350 2639 25  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5350 2600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3450 5050 3350
+Wire Wire Line
+	5050 3350 4900 3350
+Wire Wire Line
+	4900 3350 4900 3400
+Wire Wire Line
+	4900 3700 4900 3750
+Wire Wire Line
+	4900 3750 5050 3750
+Wire Wire Line
+	5050 3750 5050 3650
+$Comp
+L Amplifier_Operational:MCP602 U4
+U 1 1 5E422DB4
+P 5350 3550
+F 0 "U4" H 5350 3917 50  0000 C CNN
+F 1 "MCP602" H 5350 3826 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5350 3550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP602 U2
+U 1 1 5E714172
+P 5350 4100
+F 0 "U2" H 5350 4467 50  0000 C CNN
+F 1 "MCP602" H 5350 4376 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5350 4100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5350 4100 50  0001 C CNN
+	1    5350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4850 4900 4950
+Wire Wire Line
+	5050 5050 5000 5050
+Wire Wire Line
+	5000 5050 5000 4950
+Wire Wire Line
+	5000 4950 4900 4950
+Connection ~ 4900 4950
+Wire Wire Line
+	4900 4950 4900 5050
+$Comp
+L Device:R R1
+U 1 1 5E756DDD
+P 4900 5200
+F 0 "R1" V 4900 5200 50  0000 C CNN
+F 1 "R" V 4784 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4830 5200 50  0001 C CNN
+F 3 "~" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5250 5000 5250
+Wire Wire Line
+	5000 5250 5000 5400
+Wire Wire Line
+	5000 5400 4900 5400
+Wire Wire Line
+	4900 5400 4900 5350
+Wire Wire Line
+	5050 4200 4400 4200
+Connection ~ 4900 3350
+Wire Wire Line
+	4900 3750 4600 3750
+Connection ~ 4900 3750
+$Comp
+L Amplifier_Operational:MCP602 U9
+U 1 1 5E28279B
+P 5350 5150
+F 0 "U9" H 5350 5517 50  0000 C CNN
+F 1 "MCP602" H 5350 5426 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5350 5150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5350 5150 50  0001 C CNN
+	1    5350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4350 4900 4450
+$Comp
+L Amplifier_Operational:MCP602 U1
+U 2 1 5E1D42DA
+P 5350 3100
+F 0 "U1" H 5350 3100 25  0000 C CNN
+F 1 "MCP602" H 5350 3376 25  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5350 3100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5350 3100 50  0001 C CNN
+	2    5350 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3550 6400 3550
+Wire Wire Line
+	5050 3100 4900 3100
+Wire Wire Line
+	4900 3100 4900 3350
+Wire Wire Line
+	6400 2850 5850 2850
+Wire Wire Line
+	5850 2850 5850 2500
+Wire Wire Line
+	5850 2500 5650 2500
+$Comp
+L cr2013-mi2121:ST7735 U3
+U 1 1 5E691941
+P 9000 3700
+F 0 "U3" H 9000 3033 50  0000 C CNN
+F 1 "ST7735" H 9000 3124 50  0000 C CNN
+F 2 "Display:CR2013-MI2121" H 8850 3350 50  0001 C CNN
+F 3 "" H 8350 4200 50  0001 C CNN
+	1    9000 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 3450 8200 3450
+Wire Wire Line
+	8200 3550 7950 3550
+Wire Wire Line
+	7950 3650 8200 3650
+Wire Wire Line
+	8200 3750 7950 3750
+Wire Wire Line
+	7950 3850 8200 3850
+Wire Wire Line
+	8100 4050 8100 3950
+Wire Wire Line
+	8100 3950 8200 3950
+Wire Wire Line
+	7950 4050 8100 4050
+Wire Wire Line
+	8200 3350 8150 3350
+Wire Wire Line
+	8150 3350 8150 3300
+Wire Wire Line
+	8150 3300 8600 3300
+Wire Wire Line
+	8600 3300 8600 4100
+Wire Wire Line
+	8600 4100 8150 4100
+Wire Wire Line
+	8150 4100 8150 4050
+Wire Wire Line
+	8150 4050 8200 4050
+$Comp
+L power:GNDS #PWR0101
+U 1 1 5E4841BE
+P 4900 5400
+F 0 "#PWR0101" H 4900 5150 50  0001 C CNN
+F 1 "GNDS" H 4905 5227 50  0000 C CNN
+F 2 "" H 4900 5400 50  0001 C CNN
+F 3 "" H 4900 5400 50  0001 C CNN
+	1    4900 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 5400
+$Comp
+L Transistor_BJT:BC849W Q1
+U 1 1 5E6F97B0
+P 5000 4650
+F 0 "Q1" H 5190 4696 50  0000 L CNN
+F 1 "BC849W" H 5190 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5200 4575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5000 4650 50  0001 L CNN
+	1    5000 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3650 5800 4100
+Wire Wire Line
+	5800 4100 5650 4100
+Wire Wire Line
+	5800 3650 6400 3650
+Wire Wire Line
+	5950 3750 5950 5150
+Wire Wire Line
+	5950 5150 5650 5150
+Wire Wire Line
+	5950 3750 6400 3750
+Wire Wire Line
+	6100 4650 5200 4650
+Wire Wire Line
+	6400 2950 5850 2950
+Wire Wire Line
+	5850 3000 5650 3000
+Wire Wire Line
+	5850 2950 5850 3000
+Wire Wire Line
+	4600 3750 4600 2750
+Wire Wire Line
+	4000 2750 4600 2750
+Wire Wire Line
+	4750 3200 4750 2600
+Wire Wire Line
+	4000 3200 4400 3200
+Wire Wire Line
+	4750 2600 5050 2600
+Wire Wire Line
+	4500 2950 4500 4000
+Wire Wire Line
+	4000 2950 4500 2950
+Wire Wire Line
+	4500 4000 5050 4000
+Wire Wire Line
+	4400 3200 4400 4200
+Connection ~ 4400 3200
+Wire Wire Line
+	4400 3200 4750 3200
+Wire Wire Line
+	4000 3550 4250 3550
+Wire Wire Line
+	4250 3550 4250 4350
+Wire Wire Line
+	4250 4350 4900 4350
+Text Label 4000 3400 0    50   ~ 0
++12
+Wire Wire Line
+	6400 4050 6100 4050
+Wire Wire Line
+	6100 4050 6100 4650
+$Comp
+L lsu4.9:LSU4.9 λ1
+U 1 1 5E48AC10
+P 3900 2650
+F 0 "λ1" H 4417 2814 50  0000 C CNN
+F 1 "LSU4.9" H 4417 2723 50  0000 C CNN
+F 2 "" H 4700 2600 50  0001 C CNN
+F 3 "" H 4700 2600 50  0001 C CNN
+	1    3900 2650
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
