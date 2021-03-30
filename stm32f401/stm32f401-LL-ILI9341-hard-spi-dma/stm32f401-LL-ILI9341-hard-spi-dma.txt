@@ -1,0 +1,68 @@
+Configuration	stm32f401-LL-ILI9341-hard-spi-dma
+STM32CubeMX 	6.1.1
+Date	03/23/2021
+MCU	STM32F401CCUx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SPI1	Full-Duplex Master	SPI1_MISO	PA6
+SPI1	Full-Duplex Master	SPI1_MOSI	PA7
+SPI1	Full-Duplex Master	SPI1_SCK	PA5
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13-ANTI_TAMP	GPIO_Output	LED
+12	PA2	GPIO_Output	TFT_CS
+13	PA3	GPIO_Output	TFT_RST
+14	PA4	GPIO_Output	TFT_DC
+15	PA5	SPI1_SCK	
+16	PA6	SPI1_MISO	
+17	PA7	SPI1_MOSI	
+18	PB0	GPIO_Output	TFT_LED
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SPI1	Full-Duplex Master	SPI1_MISO	PA6
+SPI1	Full-Duplex Master	SPI1_MOSI	PA7
+SPI1	Full-Duplex Master	SPI1_SCK	PA5
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13-ANTI_TAMP	GPIO_Output	LED
+12	PA2	GPIO_Output	TFT_CS
+13	PA3	GPIO_Output	TFT_RST
+14	PA4	GPIO_Output	TFT_DC
+15	PA5	SPI1_SCK	
+16	PA6	SPI1_MISO	
+17	PA7	SPI1_MOSI	
+18	PB0	GPIO_Output	TFT_LED
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : stm32f401-LL-ILI9341-hard-spi-dma
+Project Folder : /home/ram/00/stm32_tft_spi/stm32f401/stm32f401-LL-ILI9341-hard-spi-dma
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_F4 V1.25.2
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

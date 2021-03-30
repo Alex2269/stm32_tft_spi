@@ -1,0 +1,7 @@
+
+
+Board
+Name	STM32H7XX M
+Part	STM32F7XX_M (note the typo F instead of H)
+Brand	DevEBox
+https://stm32-base.org/boards/STM32H750VBT6-STM32H7XX-M
