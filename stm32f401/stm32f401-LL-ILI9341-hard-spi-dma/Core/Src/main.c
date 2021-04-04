@@ -316,9 +316,9 @@ void drawMandelbrot(void)
 void drawMandelbrotAlternative(const uint16_t scale, const uint16_t iterations, const float c_re_0, const float c_im_0)
 {
   const uint16_t height = 240;
-  const uint8_t halfHeight = 120;
+  const uint8_t halfHeight = height/2;
   const uint16_t width = 320;
-  const uint8_t halfWidth = 240;
+  const uint8_t halfWidth = 200;
   const float scaleFactor = 4.0 / width / scale;
   const float halfIterations = iterations / 2;
 
@@ -434,7 +434,6 @@ int main(void)
   dsp_ini(240, 320);
   
   uint16_t globalScale = 1;
-  uint16_t iterations = 1;
   float c_re_0 = 0;
   float c_im_0 = 0;
     
@@ -454,11 +453,11 @@ int main(void)
   {
     test();
     drawMandelbrot();
-    delay_ms(1000);
+    delay_ms(100);
 
-    for(uint8_t i=6;i<10;i++)
+    for(uint8_t i=12;i<16;i++)
     {
-      drawMandelbrotAlternative(globalScale, i+iterations++, c_re_0, c_im_0);
+      drawMandelbrotAlternative(globalScale, i++, c_re_0, c_im_0);
     }
     /* USER CODE END WHILE */
 
