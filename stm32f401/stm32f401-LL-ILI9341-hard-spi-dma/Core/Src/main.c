@@ -247,7 +247,8 @@ void test(void)
 }
 
 static inline long
-map(long x, long in_min, long in_max, long out_min, long out_max) {
+map(long x, long in_min, long in_max, long out_min, long out_max)
+{
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
@@ -320,12 +321,17 @@ void drawMandelbrotAlternative(const uint16_t scale, const uint16_t iterations, 
   const uint8_t halfWidth = 240;
   const float scaleFactor = 4.0 / width / scale;
   const float halfIterations = iterations / 2;
-  const float color_factor = 255 / iterations;
-  uint8_t shade_red = 255;
-  uint32_t col = 0xFFFF0000;
+
+  uint16_t color;
+  uint16_t color_inside;
+  uint16_t color_midle;
   char isInside = 1;
   float c_re, c_im, z_re, z_re_temp, z_im_temp, z_im, n;
   uint16_t y, x;
+  // --
+  color = rand16();
+  color_midle = rand16();
+  color_inside = rand16();
   // --
   for (y = 0; y < height; y++) 
   {
@@ -352,19 +358,15 @@ void drawMandelbrotAlternative(const uint16_t scale, const uint16_t iterations, 
       }
       if (isInside) 
       {
-        dsp_draw_pixel(x, y, 0xFF000000);
+        dsp_draw_pixel(x, y, color_inside);
       }
       else if (n > halfIterations) 
       {
-        shade_red = n * color_factor;
-        col = (shade_red << 8) + (shade_red << 16) + (255 << 24);
-        dsp_draw_pixel(x, y, col);
+        dsp_draw_pixel(x, y, color_midle);
       }
       else 
       {
-        shade_red = n * color_factor;
-        col = (shade_red << 16) + (255 << 24);
-        dsp_draw_pixel(x, y, col);
+        dsp_draw_pixel(x, y, color);
       }
     }
   }
@@ -452,9 +454,9 @@ int main(void)
   {
     test();
     drawMandelbrot();
-    delay_ms(2000);
+    delay_ms(1000);
 
-    for(uint8_t i=5;i<10;i++)
+    for(uint8_t i=6;i<10;i++)
     {
       drawMandelbrotAlternative(globalScale, i+iterations++, c_re_0, c_im_0);
     }
