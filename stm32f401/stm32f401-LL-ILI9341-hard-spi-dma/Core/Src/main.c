@@ -455,7 +455,7 @@ int main(void)
     drawMandelbrot();
     delay_ms(100);
 
-    for(uint8_t i=12;i<16;i++)
+    for(uint8_t i=10;i<16;i++)
     {
       drawMandelbrotAlternative(globalScale, i++, c_re_0, c_im_0);
     }
